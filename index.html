@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fbe8dac91.js" crossorigin="anonymous"></script>
+    <title>AuraTrip - Agência de Viagens</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>AuraTrip</h1>
+        <h2>A Sua Viagem Com Mais Aura</h2>
+        <nav>
+            <a href="#" class="active"><i class="fa-solid fa-plane-departure"></i>Passagens</a>
+            <a href="#"><i class="fa-solid fa-hotel"></i>Hotéis</a>
+            <a href="#"><i class="fa-solid fa-ship"></i>Cruzeiros</a>
+            <a href="#"><i class="fa-solid fa-lock"></i>Seguro Viagem</a>
+        </nav>
+        <div class="caixa-pesquisa">
+            <input type="text" placeholder="Para onde você quer viajar?" name="q" required>
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+    <main>
+    <section class="pacotes" id="litoral-norte">
+        <h1>Os melhores destinos do <strong>LITORAL NORTE</strong></h1>
+        <div class="carrossel-container">
+            <button class="seta anterior" onclick="scrollCarrossel('litoral-norte', -1)">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <div class="carrossel-img">
+                <div class="item-pacote">
+                    <img src="img/Praia-Caraguatatuba.jpg" alt="Caraguatatuba">
+                    <div class="info-pacote">
+                        <h3>Caraguá | 4 dias</h3>
+                                <p class="subtitulo">Saindo de Florianópolis</p>
+                                <p class="detalhe">Ida: 20/11/2026</p>
+                                <p class="detalhe">Volta: 24/11/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 800</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Ubatuba.jpg" alt="Ubatuba">
+                    <div class="info-pacote">
+                        <h3>Ubatuba | 5 dias</h3>
+                                <p class="subtitulo">Saindo de Florianópolis</p>
+                                <p class="detalhe">Ida: 22/10/2026</p>
+                                <p class="detalhe">Volta: 27/10/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 1.000</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-São-Sebastião.jpg" alt="São Sebastião">
+                    <div class="info-pacote">
+                        <h3>São Sebastião | 4 dias</h3>
+                                <p class="subtitulo">Saindo de Curitiba</p>
+                                <p class="detalhe">Ida: 15/11/2026</p>
+                                <p class="detalhe">Volta: 19/11/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 875</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Ilhabela.jpeg" alt="Ilhabela">
+                    <div class="info-pacote">
+                        <h3>Ilhabela | 7 dias</h3>
+                                <p class="subtitulo">Saindo de Curitiba</p>
+                                <p class="detalhe">Ida: 17/12/2026</p>
+                                <p class="detalhe">Volta: 24/12/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 1.600</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="seta proximo" onclick="scrollCarrossel('litoral-norte', 1)">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="pacotes" id="nordeste">
+        <h1>Os melhores destinos do <strong>NORDESTE</strong></h1>
+        <div class="carrossel-container">
+            <button class="seta anterior" onclick="scrollCarrossel('nordeste', -1)">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <div class="carrossel-img">
+                <div class="item-pacote">
+                    <img src="img/Praia-Natal.png" alt="Natal">
+                    <div class="info-pacote">
+                        <h3>Natal | 5 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 15/10/2026</p>
+                                <p class="detalhe">Volta: 20/10/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 1.250</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Porto-Seguro.jpg" alt="Porto Seguro">
+                    <div class="info-pacote">
+                        <h3>Porto Seguro | 5 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 20/11/2026</p>
+                                <p class="detalhe">Volta: 24/11/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 1.350</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Fortaleza.webp" alt="Fortaleza">
+                    <div class="info-pacote">
+                        <h3> Fortaleza | 6 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 29/09/2026</p>
+                                <p class="detalhe">Volta: 06/19/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 1.500</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Recife.webp" alt="Recife">
+                    <div class="info-pacote">
+                        <h3>Recife | 4 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 15/10/2026</p>
+                                <p class="detalhe">Volta: 19/10/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 950</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="seta proximo" onclick="scrollCarrossel('nordeste', 1)">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="pacotes" id="sul">
+        <h1>Os melhores destinos do <strong>SUL</strong></h1>
+        <div class="carrossel-container">
+            <button class="seta anterior" onclick="scrollCarrossel('sul', -1)">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <div class="carrossel-img">
+                <div class="item-pacote">
+                    <img src="img/Praia-Florianópolis.webp" alt="Florianópolis">
+                    <div class="info-pacote">
+                        <h3>Florianópolis | 5 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 26/12/2026</p>
+                                <p class="detalhe">Volta: 31/12/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 1.800</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Balneário-Camboriú.avif" alt="Balneário Camboriú">
+                    <div class="info-pacote">
+                        <h3>Balneário C... | 5 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 29/12/2026</p>
+                                <p class="detalhe">Volta: 03/01/2027</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 2.000</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Porto-Alegre.jpg" alt="Porto Alegre">
+                    <div class="info-pacote">
+                        <h3>Porto Alegre | 6 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 15/10/2026</p>
+                                <p class="detalhe">Volta: 21/10/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 1.750</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+                <div class="item-pacote">
+                    <img src="img/Praia-Pontal-do-Paraná.jpg" alt="Pontal do Paraná">
+                    <div class="info-pacote">
+                        <h3>Pontal Paraná | 4 dias</h3>
+                                <p class="subtitulo">Saindo de São Paulo</p>
+                                <p class="detalhe">Ida: 02/11/2026</p>
+                                <p class="detalhe">Volta: 06/11/2026</p>
+                                <div class="bloco-preco">
+                                    <p class="texto-pequeno">A partir de</p>
+                                    <p class="valor">R$ 650</p>
+                                </div>
+                                <div class="parcelamento">Em até 12x sem juros</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="seta proximo" onclick="scrollCarrossel('sul', 1)">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+</main>
+    <footer>
+        <h1><strong>&copy;AuraTrip</strong> - Todos os Direitos Reservados</h1>
+        <p>Endereço: Rua Capitão Serelepe Lombo, N°123, São Paulo - SP | Tel: (11)99234-2312 | Email: auratrip@gmail.com</p>
+    </footer>
+</body>
+</html>
